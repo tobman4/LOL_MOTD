@@ -1,6 +1,6 @@
 #! /bin/bash
 
-lol_version=$(curl https://ddragon.leagueoflegends.com/realms/euw.json | jq -r .v)
+lol_version=$(curl --silent https://ddragon.leagueoflegends.com/realms/euw.json | jq -r .v)
 if [[ -z $lol_version ]]
 then
 	$lol_version=13.1.1
