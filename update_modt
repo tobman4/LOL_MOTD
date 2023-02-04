@@ -41,6 +41,14 @@ echo "Champ id $champ_id"
 
 score=$(curl --silent "https://euw1.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/$LOL_MOTD_SUMMONER/by-champion/$champ_id" -H "X-Riot-Token: $RIOT_KEY" | jq .championPoints)
 
+if [[ $score -eq null ]]
+then
+	echo "Failed to get score :("
+	exit 1
+fi
+
+echo "Score: $score"
+
 if [[ $score -ge 1000 ]]
 then
 	
