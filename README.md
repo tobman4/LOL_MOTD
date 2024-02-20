@@ -6,7 +6,7 @@ League of Legends motd
 - `$LOL_MOTD_REGION`
   - default: euw1
 - `$LOL_MOTD_SUMMONER`
-  - Summoner id
+  - Summoner puuid
 - `$RIOT_KEY`
   - Riot api key
 - `$LOL_MOTD_CHAMP`
