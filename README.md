@@ -1,6 +1,6 @@
 # LOL_MOTD
 
-Get cool motd with mastery score on your favorit champion :o
+Get cool motd with mastery score on your favorit champion :o \
 It write the motd to `/etc/motd.d/10-header`
 
 ## requirements
